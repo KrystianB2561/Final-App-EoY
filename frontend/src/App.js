@@ -32,7 +32,7 @@ function Login() {
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post('https://backend-3isk.onrender.com', {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/register`, {
         username,
         password
       });
@@ -44,7 +44,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('https://backend-3isk.onrender.com', {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/login`, {
         username,
         password
       });
