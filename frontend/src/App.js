@@ -32,8 +32,6 @@ function Login() {
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post('const handleRegister = async () => {
-    try {
       const response = await axios.post('https://backend-3isk.onrender.com', {
         username,
         password
