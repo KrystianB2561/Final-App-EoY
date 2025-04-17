@@ -40,14 +40,6 @@ function Login() {
     } catch (error) {
       setMessage(error.response.data.message);
     }
-  };', {
-        username,
-        password
-      });
-      setMessage(response.data.message);
-    } catch (error) {
-      setMessage(error.response.data.message);
-    }
   };
 
   const handleLogin = async () => {
